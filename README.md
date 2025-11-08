@@ -38,12 +38,13 @@ Tools:      Git • Docker • Vercel • AWS
 
 </div>
 
-### 📌 Featured Projects
+### 🚀 Today's Featured Projects
 
-- **[PhishGuard](https://github.com/Pratyush038/PhishGuard)** - ML-powered phishing detection system
+<!-- PROJECT_ROTATION_START -->
 - **[FoodBridge-AI](https://github.com/Pratyush038/FoodBridge-AI)** - AI-driven food donation platform
-- **[IoT Smart Attendance](https://github.com/Pratyush038/iot-smart-attendance)** - Face recognition attendance system
-
+- **[DisasterNetworkSimulator](https://github.com/Pratyush038/DisasterNetworkSimulator)** - Network simulation for disaster scenarios
+- **[Cricklytics_PRB](https://github.com/Pratyush038/Cricklytics_PRB)** - Cricket analytics platform
+<!-- PROJECT_ROTATION_END -->
 ---
 
 <div align="center">
