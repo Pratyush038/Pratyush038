@@ -1,0 +1,32 @@
+name: Update README
+
+on:
+  schedule:
+    # Runs every day at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Update README timestamp
+        run: |
+          # Get current date and time
+          DATE=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          
+          # Update the Last Updated line in README
+          sed -i "s/\*\*Last Updated:\*\*.*/\*\*Last Updated:\*\* $DATE/g" README.md
+      
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "docs: update README with current date [skip ci]" && git push)
