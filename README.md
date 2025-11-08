@@ -48,8 +48,7 @@ Tools:      Git • Docker • Vercel • AWS
 
 <div align="center">
 
-**Last Updated:** ![Date](https://img.shields.io/badge/dynamic/json?color=blue&label=&query=$.date&url=https://api.github.com/repos/Pratyush038/Pratyush038&style=flat-square&cacheSeconds=86400)
-
+**Last Updated:** 2025-11-08 14:00:00 UTC
 *This profile updates automatically every day*
 
 </div>
