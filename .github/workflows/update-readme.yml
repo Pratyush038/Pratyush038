@@ -19,8 +19,7 @@ jobs:
       - name: Update README with rotating projects
         run: |
           # Get current date and time
-          DATE=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
-          
+          DATE=$(TZ='Asia/Kolkata' date '+%Y-%m-%d %H:%M:%S IST')          
           # Define all projects in the rotation
           declare -a PROJECTS=(
             "FoodBridge-AI|https://github.com/Pratyush038/FoodBridge-AI|AI-driven food donation platform"
