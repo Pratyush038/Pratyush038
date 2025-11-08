@@ -16,12 +16,59 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: Update README timestamp
+      - name: Update README with rotating projects
         run: |
           # Get current date and time
           DATE=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
           
-          # Update the Last Updated line in README
+          # Define all projects in the rotation
+          declare -a PROJECTS=(
+            "FoodBridge-AI|https://github.com/Pratyush038/FoodBridge-AI|AI-driven food donation platform"
+            "DisasterNetworkSimulator|https://github.com/Pratyush038/DisasterNetworkSimulator|Network simulation for disaster scenarios"
+            "Cricklytics_PRB|https://github.com/Pratyush038/Cricklytics_PRB|Cricket analytics platform"
+            "Multi_Armed_Bandit|https://github.com/Pratyush038/Multi_Armed_Bandit|Multi-armed bandit algorithms implementation"
+            "PhishGuard|https://github.com/Pratyush038/PhishGuard|ML-powered phishing detection system"
+            "iot-smart-attendance|https://github.com/Pratyush038/iot-smart-attendance|Face recognition attendance system"
+            "QuantumLock|https://github.com/Pratyush038/QuantumLock|Quantum-inspired security system"
+            "ai_health_planner|https://github.com/Pratyush038/ai_health_planner|AI-powered health planning assistant"
+          )
+          
+          # Calculate which set of 3 projects to show based on day of year
+          DAY_OF_YEAR=$(date +%j)
+          # Remove leading zeros
+          DAY_OF_YEAR=$((10#$DAY_OF_YEAR))
+          
+          # Total projects = 8, show 3 at a time
+          # We'll rotate through showing 3 projects, cycling every day
+          TOTAL_PROJECTS=${#PROJECTS[@]}
+          START_INDEX=$(( (DAY_OF_YEAR * 3) % TOTAL_PROJECTS ))
+          
+          # Build the new projects section
+          NEW_PROJECTS="<!-- PROJECT_ROTATION_START -->\n"
+          
+          for i in 0 1 2; do
+            INDEX=$(( (START_INDEX + i) % TOTAL_PROJECTS ))
+            IFS='|' read -r NAME URL DESC <<< "${PROJECTS[$INDEX]}"
+            NEW_PROJECTS+="- **[$NAME]($URL)** - $DESC\n"
+          done
+          
+          NEW_PROJECTS+="<!-- PROJECT_ROTATION_END -->"
+          
+          # Update the projects section in README
+          awk -v new="$NEW_PROJECTS" '
+            /<!-- PROJECT_ROTATION_START -->/ {
+              print new
+              skip=1
+              next
+            }
+            /<!-- PROJECT_ROTATION_END -->/ {
+              skip=0
+              next
+            }
+            !skip
+          ' README.md > README.tmp && mv README.tmp README.md
+          
+          # Update the Last Updated line
           sed -i "s/\*\*Last Updated:\*\*.*/\*\*Last Updated:\*\* $DATE/g" README.md
       
       - name: Commit and push if changed
@@ -29,4 +76,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "docs: update README with current date [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "docs: update README with current date and featured projects [skip ci]" && git push)
