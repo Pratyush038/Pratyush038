@@ -1,16 +1,55 @@
-## Hi there 👋
+<!-- This README automatically updates daily -->
 
-<!--
-**Pratyush038/Pratyush038** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
 
-Here are some ideas to get you started:
+# Hi, I'm Pratyush 👋
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+*Turning ideas into code - from AI engines to IoT systems*
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://pratyush038.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/pratyushbidare)
+
+</div>
+
+---
+
+### 🧑‍💻 About Me
+
+- 🎓 Computer Science Engineering student at **RVCE**
+- 🔧 Full-stack developer with expertise in **ML** and **real-world problem solving**
+- 🌱 Currently exploring **AI/ML** and **IoT systems**
+- 💡 Passionate about building scalable solutions
+
+### 🛠️ Tech Stack
+
+```text
+Languages:  Python • TypeScript • JavaScript • C++
+Frontend:   React • Next.js • TailwindCSS
+Backend:    Node.js • Express • Flask
+Database:   PostgreSQL • MongoDB • Supabase
+Tools:      Git • Docker • Vercel • AWS
+```
+
+### 📊 GitHub Stats
+
+<div align="center">
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Pratyush038&theme=dark&hide_border=true)
+
+</div>
+
+### 📌 Featured Projects
+
+- **[PhishGuard](https://github.com/Pratyush038/PhishGuard)** - ML-powered phishing detection system
+- **[FoodBridge-AI](https://github.com/Pratyush038/FoodBridge-AI)** - AI-driven food donation platform
+- **[IoT Smart Attendance](https://github.com/Pratyush038/iot-smart-attendance)** - Face recognition attendance system
+
+---
+
+<div align="center">
+
+**Last Updated:** ![Date](https://img.shields.io/badge/dynamic/json?color=blue&label=&query=$.date&url=https://api.github.com/repos/Pratyush038/Pratyush038&style=flat-square&cacheSeconds=86400)
+
+*This profile updates automatically every day*
+
+</div>
