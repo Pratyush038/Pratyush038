@@ -41,15 +41,15 @@ Tools:      Git • Docker • Vercel • AWS
 ### 🚀 Today's Featured Projects
 
 <!-- PROJECT_ROTATION_START -->
-- **[iot-smart-attendance](https://github.com/Pratyush038/iot-smart-attendance)** - Face recognition attendance system
-- **[QuantumLock](https://github.com/Pratyush038/QuantumLock)** - Quantum-inspired security system
-- **[ai_health_planner](https://github.com/Pratyush038/ai_health_planner)** - AI-powered health planning assistant
+- **[FoodBridge-AI](https://github.com/Pratyush038/FoodBridge-AI)** - AI-driven food donation platform
+- **[DisasterNetworkSimulator](https://github.com/Pratyush038/DisasterNetworkSimulator)** - Network simulation for disaster scenarios
+- **[Cricklytics_PRB](https://github.com/Pratyush038/Cricklytics_PRB)** - Cricket analytics platform
 <!-- PROJECT_ROTATION_END -->
 ---
 
 <div align="center">
 
-**Last Updated:** 2026-02-24 06:38:25 IST
+**Last Updated:** 2026-02-25 06:44:04 IST
 *This profile updates automatically every day*
 
 </div>
