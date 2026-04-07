@@ -41,15 +41,15 @@ Tools:      Git • Docker • Vercel • AWS
 ### 🚀 Today's Featured Projects
 
 <!-- PROJECT_ROTATION_START -->
-- **[FoodBridge-AI](https://github.com/Pratyush038/FoodBridge-AI)** - AI-driven food donation platform
-- **[DisasterNetworkSimulator](https://github.com/Pratyush038/DisasterNetworkSimulator)** - Network simulation for disaster scenarios
-- **[Cricklytics_PRB](https://github.com/Pratyush038/Cricklytics_PRB)** - Cricket analytics platform
+- **[Multi_Armed_Bandit](https://github.com/Pratyush038/Multi_Armed_Bandit)** - Multi-armed bandit algorithms implementation
+- **[PhishGuard](https://github.com/Pratyush038/PhishGuard)** - ML-powered phishing detection system
+- **[iot-smart-attendance](https://github.com/Pratyush038/iot-smart-attendance)** - Face recognition attendance system
 <!-- PROJECT_ROTATION_END -->
 ---
 
 <div align="center">
 
-**Last Updated:** 2026-04-06 06:51:39 IST
+**Last Updated:** 2026-04-07 06:49:26 IST
 *This profile updates automatically every day*
 
 </div>
