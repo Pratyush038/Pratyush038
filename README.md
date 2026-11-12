@@ -41,15 +41,15 @@ Tools:      Git • Docker • Vercel • AWS
 ### 🚀 Today's Featured Projects
 
 <!-- PROJECT_ROTATION_START -->
-- **[DisasterNetworkSimulator](https://github.com/Pratyush038/DisasterNetworkSimulator)** - Network simulation for disaster scenarios
-- **[Cricklytics_PRB](https://github.com/Pratyush038/Cricklytics_PRB)** - Cricket analytics platform
-- **[Multi_Armed_Bandit](https://github.com/Pratyush038/Multi_Armed_Bandit)** - Multi-armed bandit algorithms implementation
+- **[PhishGuard](https://github.com/Pratyush038/PhishGuard)** - ML-powered phishing detection system
+- **[iot-smart-attendance](https://github.com/Pratyush038/iot-smart-attendance)** - Face recognition attendance system
+- **[QuantumLock](https://github.com/Pratyush038/QuantumLock)** - Quantum-inspired security system
 <!-- PROJECT_ROTATION_END -->
 ---
 
 <div align="center">
 
-**Last Updated:** 2026-11-11 09:09:01 IST
+**Last Updated:** 2026-11-12 10:17:05 IST
 *This profile updates automatically every day*
 
 </div>
